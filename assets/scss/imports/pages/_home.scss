@@ -110,6 +110,33 @@
   // ===== intro =====
   .intro {
     &_container {
+      padding: 96px 17px 0;
+      margin: 0 auto;
+      text-align: center;
+
+      @include maxW(1023px) {
+        padding-top: 48px;
+      }
+    }
+
+    &_content {
+      p {
+        font-size: 1.6rem;
+        line-height: 1.68;
+      }
+
+      @include maxW(1023px) {
+        p {
+          font-feature-settings: "palt";
+        }
+      }
+    }
+  }
+
+  // ===== look =====
+  .look {
+    &_container {
+      height: 100vh;
     }
   }
 }

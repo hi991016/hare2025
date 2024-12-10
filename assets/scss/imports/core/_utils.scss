@@ -1,6 +1,18 @@
 /* Utils
 ------------------------------------------------------------*/
 
+/* fade */
+[data-fadeup] {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: 1s;
+
+  &.--fadein {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* keyframes */
 @keyframes scrolldown {
   0% {

@@ -2,6 +2,8 @@
 
 // ===== init =====
 const init = () => {
+  // #
+  history.scrollRestoration = "manual";
   // # app-height
   appHeight();
   // # init loading
@@ -80,6 +82,21 @@ const initLoading = function () {
     }, 1000);
   }, 2400);
 };
+
+// ===== scroll fade up content =====
+const elementsArray = document.querySelectorAll("[data-fadeup]");
+const fadeInItems = () => {
+  let pageTop = window.scrollY;
+  let fadeInThreshold = pageTop + window.innerHeight * 0.75;
+
+  for (let i = 0; i < elementsArray.length; i++) {
+    let elem = elementsArray[i];
+    if (elem.getBoundingClientRect().top < fadeInThreshold) {
+      elem.classList.add("--fadein");
+    }
+  }
+};
+window.addEventListener("scroll", fadeInItems);
 
 // ===== lazy loading =====
 const ll = new LazyLoad({
