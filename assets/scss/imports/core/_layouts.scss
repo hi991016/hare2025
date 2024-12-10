@@ -63,15 +63,6 @@ body {
 //-------------------------------------------------------
 main {
   flex: 1;
-
-  img {
-    opacity: 0;
-    transition: opacity 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
-    &.loaded {
-      opacity: 1;
-    }
-  }
 }
 
 ::selection {

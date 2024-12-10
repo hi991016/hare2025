@@ -51,6 +51,16 @@
 </head>
 
 <body>
+    <!-- @loading -->
+    <div class="c-loading" data-loading>
+        <div class="c-loading_container">
+            <div class="c-loading_logo" data-loading-logo>
+                <img src="/assets/img/home/logo.webp" alt="HAREMODE" width="252.81" height="484.29" draggable="false">
+            </div>
+        </div>
+    </div>
+    <!-- @@loading -->
+
     <!-- @header -->
     <header class="c-header">
         <div class="c-header_container"></div>
@@ -62,10 +72,52 @@
         <!-- top// -->
         <section class="top">
             <div class="top_container">
-                <h2>have a nice day!!</h2>
+                <div class="top_swiper" data-top-swiper>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 1023px)" data-srcset="/assets/img/home/top_01_sp.webp">
+                                <img draggable="false" data-src="/assets/img/home/top_01_pc.webp" alt="HARE MODE 2025"
+                                    width="1440" height="779" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 1023px)" data-srcset="/assets/img/home/top_02_sp.webp">
+                                <img draggable="false" data-src="/assets/img/home/top_02_pc.webp" alt="HARE MODE 2025"
+                                    width="1440" height="779" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 1023px)" data-srcset="/assets/img/home/top_03_sp.webp">
+                                <img draggable="false" data-src="/assets/img/home/top_03_pc.webp" alt="HARE MODE 2025"
+                                    width="1440" height="779" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_heading">
+                    <h1 class="eb-fonts fw400">HAREMODE</h1>
+                </div>
+                <div class="top_logo">
+                    <img src="/assets/img/home/logo.webp" alt="HAREMODE" width="252.81" height="484.29"
+                        draggable="false">
+                    <p class="mincho-fonts fw500">
+                        新春恒例、〈ハレ〉からお客様へ <br />
+                        感謝をお届けするお年賀企画
+                    </p>
+                </div>
+                <div class="top_scrolldown"><span></span></div>
             </div>
         </section>
         <!-- //top -->
+
+        <!-- intro// -->
+        <section class="intro">
+            <div class="intro_container"></div>
+        </section>
+        <!-- //intro -->
     </main>
     <!-- @@main -->
 
