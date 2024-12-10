@@ -1,0 +1,55 @@
+/* Utils
+------------------------------------------------------------*/
+
+/* fonts family */
+.eb-fonts {
+  font-family: eb-garamond, serif;
+  font-style: normal;
+}
+
+.shuei-fonts {
+  font-family: dnp-shuei-gothic-gin-std, sans-serif;
+  font-style: normal;
+}
+
+.mincho-fonts {
+  font-family: shippori-mincho-b1, sans-serif;
+  font-style: normal;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+/* only device */
+
+.sp-only,
+.is-hidden {
+  display: none !important;
+}
+
+@include maxW(1023px) {
+  .pc-only {
+    display: none !important;
+  }
+
+  .sp-only {
+    display: block !important;
+  }
+}
