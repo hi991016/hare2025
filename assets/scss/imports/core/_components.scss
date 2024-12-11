@@ -41,7 +41,7 @@
     }
 
     img {
-      width: 252.81px;
+      width: min(17.56vw, 252.81px);
       height: auto;
       object-fit: contain;
     }
@@ -50,7 +50,7 @@
       top: 85px;
 
       img {
-        width: 219.76px;
+        width: min(53.08vw, 219.76px);
       }
     }
   }

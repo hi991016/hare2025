@@ -108,7 +108,6 @@ const fadeInItems = () => {
 window.addEventListener("scroll", fadeInItems);
 
 // ===== swiper campaign =====
-// if (window.innerWidth < 1024) {
 const campaignSwiper = new Swiper("[data-campaign-swiper]", {
   speed: 800,
   loop: true,
@@ -133,7 +132,6 @@ const campaignSwiper = new Swiper("[data-campaign-swiper]", {
     },
   },
 });
-// }
 
 // ===== lazy loading =====
 const ll = new LazyLoad({
