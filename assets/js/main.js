@@ -107,6 +107,34 @@ const fadeInItems = () => {
 };
 window.addEventListener("scroll", fadeInItems);
 
+// ===== swiper campaign =====
+// if (window.innerWidth < 1024) {
+const campaignSwiper = new Swiper("[data-campaign-swiper]", {
+  speed: 800,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    clickable: true,
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      allowTouchMove: true,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 42,
+      allowTouchMove: false,
+    },
+  },
+});
+// }
+
 // ===== lazy loading =====
 const ll = new LazyLoad({
   threshold: 0,
