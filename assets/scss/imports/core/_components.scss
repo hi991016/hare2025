@@ -80,7 +80,7 @@
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.43;
-    margin-top: 25px;
+    margin-top: 22px;
   }
 
   @include maxW(1023px) {
@@ -92,7 +92,8 @@
 
     h2 {
       font-size: 3rem;
-      margin-top: 8px;
+      line-height: 1.05;
+      margin-top: 12px;
     }
 
     p {
